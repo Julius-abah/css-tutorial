@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutoria2</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    margin: 0;
+}
+
+.container2 {
+    width: 98vw;
+    height: 98vh;
+
+    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    display: grid;
+    padding: 30px;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 60px 1fr 1fr 110px;
+    box-sizing: border-box;
+}
+
+.container2 div {
+    padding: 12px;
+    border: 4px solid green;
+    border-radius: 6px;
+}
+
+.header2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.container-large2 {
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 2;
+}
+
+.footer {
+    grid-column: 1 / span 3;
+}
+    </style>
+</head>
+<body>
+    <div class="container2">
+        <div class="header2">Header Two</div>
+        <div class="container-large2"> cont L1</div>
+        <div class="container-small">Cont s1</div>
+        <div class="container-small">Cont s2</div>
+        <div class="footer">Footer</div>
+        
+    </div>
+</body>
+</html>
